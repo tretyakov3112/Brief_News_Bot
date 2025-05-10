@@ -1,0 +1,13 @@
+services:
+  microservice:
+    build: ./microservice
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_MODEL=gpt-4.1-nano
+    image: news-maker
+    container_name: news-maker
+    volumes:
+      - ./data:/app/data   
+    restart: unless-stopped
+    command: ["python3", "main.py"]

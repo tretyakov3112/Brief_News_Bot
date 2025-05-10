@@ -1,0 +1,10 @@
+news_aggregator/.env
+news_aggregator/.DS_Store
+news_aggregator/microservice/bot.session
+news_aggregator/microservice/gazp.session
+news_aggregator/microservice/__pycache__/*.sh
+.env
+*.session
+*.pyc
+__pycache__/
+.DS_Store
